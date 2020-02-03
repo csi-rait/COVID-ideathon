@@ -1,0 +1,60 @@
+body {
+  background-color: #000;
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "IBM Plex Mono", monospace;
+}
+html{
+  overflow: hidden;
+}
+
+.header {
+  height: 100vh !important;
+}
+.headline {
+  z-index: 2000 !important;
+  text-align: center;
+}
+
+#nCanvasRender {
+  position: fixed;
+}
+.headline h1 {
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0.75rem auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.headline h4 {
+  color: #ecd92c;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #00baf1;
+  }
+}
+
+.headline span {
+  font-weight: bold;
+  color: #00baf1;
+}
