@@ -1,14 +1,29 @@
 body {
   background-color: #000;
   color: #fff;
-  height: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: "IBM Plex Mono", monospace;
 }
-html{
-  overflow: hidden;
+
+/* ----------NAVBAR----------- */
+.nav-link {
+  padding: 0 1rem !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+.nav-link:hover{
+  color: #00baf1 !important;
+}
+
+/* ------------HERO---------- */
+
+/* ----sphere canvas----- */
+#nCanvasRender {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  height: 100vh;
 }
 
 .header {
@@ -19,9 +34,6 @@ html{
   text-align: center;
 }
 
-#nCanvasRender {
-  position: fixed;
-}
 .headline h1 {
   overflow: hidden;
   border-right: 0.15em solid orange;
@@ -57,4 +69,17 @@ html{
 .headline span {
   font-weight: bold;
   color: #00baf1;
+}
+
+/* -----------PROBLEM STATEMENT-------- */
+
+.problem-content h5 {
+  color: #00baf1;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.problem-content p {
+  font-weight: 300;
+  line-height: 1.5;
 }
