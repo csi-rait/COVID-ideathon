@@ -82,4 +82,11 @@ body {
 .problem-content p {
   font-weight: 300;
   line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+/* ------------PRIZES--------- */
+
+.prizes .col-4 {
+  border: 3px solid white;
 }
