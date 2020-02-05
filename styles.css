@@ -19,6 +19,54 @@ html{
   color: #00baf1 !important;
 }
 
+.show {
+  height: 80vh !important;
+  transition: all 0.1s linear;
+  background-color: black;
+
+}
+/* -----------------Button animation css-------------- */
+.icon-bar {
+  width: 22px;
+  height: 2px;
+  background-color: #B6B6B6;
+  display: block;
+  transition: all 0.2s;
+  margin-top: 4px
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+
+
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
 /* ------------HERO---------- */
 
 /* ----sphere canvas----- */
@@ -30,8 +78,8 @@ html{
 }
 
 .header {
-  margin-top:-20vh;
-  height: 100vh !important;
+  margin-top: -10vh;
+  height: 90vh !important;
 }
 .headline {
   z-index: 2000 !important;
@@ -103,7 +151,7 @@ html{
 .prizes, .schedule{
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
-.prizes .col-3 {
+.prizes .col-lg-3 {
   border: 3px solid white;
 }
 
@@ -120,7 +168,7 @@ html{
   color: #00baf1;
 }
 
-#rules, #judge {
+#rules, #judge, #schedule {
   background-image: url("./assets/img/cool-img.png");
 }
 
@@ -142,11 +190,74 @@ html{
   background: #ecd92c;
   border-radius: 10px;
 }
+.active{
+  background-color: #000 !important;
+}
+
+/* -----------------MEDIA QUERY---------- */
 @media only screen and (max-width: 768px) {
-  body{
-    overflow-x: hidden;
+  body, html{
+    overflow-x: hidden !important;
   }
   ::-webkit-scrollbar {
     display: none;
   }
+
+ /* ---------NAV------- */
+
+  .navbar-nav {
+    text-align: center;
+    background-color: #000;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nav-item{
+    padding: 1rem 0 !important;
+  }
+  /* ------------HERO---------- */
+  .headline p{
+    font-size: 1.5rem;
+    letter-spacing: 0.3em;
+    margin-bottom: 0 !important;
+    font-weight: bold;
+  }
+  .headline h1 {
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+  }
+  
+  .headline h4{
+    font-size: 1rem;
+  }
+  .headline h5 {
+    font-size: 0.9rem;
+  }
+  .problem-content h5 {
+    font-size: 1rem;
+  }
+  
+  .problem-content p {
+   font-size: 0.75rem;
+  }
+  .problem-content h1, .prizes h1, #schedule h1, #register h1{
+    font-size: 1.325rem;
+  }
+  .prizes p{
+    font-size: 0.75rem;
+  }
+  .prizes h5, #register h5, #register h4{
+    font-size: 1rem;
+  }
+  .prizes img {
+    max-width: 60px;
+    height: auto;
+  }
+  .prizes .col-lg-3 {
+    border: none;
+  }
+ 
+
+
 }

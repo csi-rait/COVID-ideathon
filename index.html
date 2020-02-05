@@ -4,7 +4,7 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -14,20 +14,18 @@
   <!-- --------Fonts-------- -->
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400&display=swap" rel="stylesheet">
   <title>Techathon</title>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/stats.js/r11/Stats.js'></script>
+  <script src="./assets/sphere.js"></script>
+
 </head>
 
 <body>
   <!-- sphere canvas -->
   <canvas id="nCanvasRender"></canvas>
   <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/stats.js/r11/Stats.js'></script>
-  <script src="./assets/sphere.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src='app.js'></script>
-
   <!-- -----------------------NAVBAR--------------------- -->
 
-  <nav class="navbar navbar-expand-lg navbar-dark p-5" id="navbar">
+  <nav class="navbar navbar-expand-lg navbar-dark p-lg-5" id="navbar">
     <a class="navbar-brand px-md-4" href="#">Techathon</a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
       aria-controls="#navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,16 +49,17 @@
   <!-- ----------HERO-------- -->
   <div class="container d-flex align-items-center justify-content-center header">
     <div class="headline">
-      <p class="techathon"><strong>TECHATHON</strong><p>
-      <h1>24 hour National Level <span>Hackathon</span></h1>
-      <h4>31st March - 1st April</h4>
-      <h4>8 am</h4>
-      <h5><strong>Ramrao Adik Institute of Technology, Nerul</strong></h5>
+      <p class="techathon"><strong>TECHATHON 2020</strong>
+        <p>
+          <h1>24 hour National Level <span>Hackathon</span></h1>
+          <h4>31st March - 1st April</h4>
+          <h4>8 am</h4>
+          <h5><strong>Ramrao Adik Institute of Technology, Nerul</strong></h5>
     </div>
   </div>
 
   <!-- -------------PROBLEM STATEMENTS----------- -->
-  <div class="container problem-content my-xl-5 pb-xl-5" data-aos="fade-up" id="problem" data-aos-duration="800">
+  <div class="container problem-content my-5 pb-xl-5" data-aos="fade-up" id="problem" data-aos-duration="800">
     <h1 class="text-center mb-lg-4">PROBLEM STATEMENTS</h1>
     <h5>Category 1: Rural & Agriculture</h5>
     <p>1. Translate weather information to very actionable advisory to farmers.</p>
@@ -78,22 +77,22 @@
   </div>
 
   <!-- ------------PRIZES----------- -->
-  <div class="container my-xl-5 prizes pb-lg-5" data-aos="zoom-in" data-aos-duration="1000">
+  <div class="container my-5 prizes pb-5" data-aos="zoom-in" data-aos-duration="1000">
     <h1 class="text-center mb-lg-4">PRIZES</h1>
     <div class="row justify-content-center">
-      <div class="col-3 text-center px-5 py-4 ">
+      <div class="col-lg-3 text-center px-lg-5 py-lg-4">
         <img class="img-fluid p-2" data-aos="zoom-in" src="./assets/img/prizes.png" alt="">
         <p>Total Prize Amount</p>
         <h5>₹160000 </h5>
 
       </div>
-      <div class="col-3 text-center px-5 py-4 offset-1" data-aos="zoom-in" data-aos-duration="1000">
-        <img class="img-fluid p-2"  src="./assets/img/first.png" alt="">
+      <div class="col-lg-3 text-center px-lg-5 py-lg-4 offset-lg-1" data-aos="zoom-in" data-aos-duration="1000">
+        <img class="img-fluid p-2" src="./assets/img/first.png" alt="">
         <p>Winner from each category</p>
         <h5>₹30000 </h5>
       </div>
-      <div class="col-3 text-center px-5 py-4 offset-1" data-aos="zoom-in" data-aos-duration="1000">
-        <img class="img-fluid p-2"  src="./assets/img/runner-up.png" alt="">
+      <div class="col-lg-3 text-center px-lg-5 py-lg-4 offset-lg-1" data-aos="zoom-in" data-aos-duration="1000">
+        <img class="img-fluid p-2" src="./assets/img/runner-up.png" alt="">
         <p>Runner Up</p>
         <h5>₹10000 </h5>
       </div>
@@ -101,8 +100,8 @@
     </div>
   </div>
 
-  <!-- -------------PROBLEM STATEMENTS----------- -->
-  <div class="container problem-content pb-xl-5 my-lg-5" data-aos="fade-up" id="rules" data-aos-duration="800">
+  <!-- -------------RULES----------- -->
+  <div class="container problem-content pb-5 my-5 rules" data-aos="fade-up" id="rules" data-aos-duration="800">
     <h1 class="text-center my-lg-4">RULES</h1>
 
     <p>1. The Grand Finale of Techathon is a 24 Hrs Non-Stop Event. The participants will not be allowed to leave the
@@ -130,7 +129,7 @@
   </div>
 
 
-  <div class="container text-center problem-content pb-xl-5 my-lg-5" data-aos="slide-up"data-aos-duration="800" >
+  <div class="container text-center problem-content pb-5 my-5" data-aos="slide-up" data-aos-duration="800">
     <h4 style="color: #ecd92c;">NOTES</h4>
     <p class="mb-1">The applications can be developed on any software platforms.</p>
     <p class="mb-1">The teams need to bring their own laptops with chargers and necessary peripherals. We encourage if
@@ -142,78 +141,100 @@
 
   </div>
 
-  <div class="container problem-content text-center pb-xl-5 my-lg-5" data-aos="fade-up" data-aos-duration="800">
+  <div class="container problem-content text-center pb-5 my-5" data-aos="fade-up" data-aos-duration="800">
     <h1>JUDGING CRITERIA</h1>
     <p>Judging will be based on the following criteria, with equal weight assigned to each:</p>
     <h5>Innovation / Ambition</h5>
-    <p>Was the idea unique, or a different take on an existing/similar app? What was added to the app that made it special or more useful? Was the idea behind the app ambitious? Creative? How well did the app execute upon the theme/category chosen?</p>
+    <p>Was the idea unique, or a different take on an existing/similar app? What was added to the app that made it
+      special or more useful? Was the idea behind the app ambitious? Creative? How well did the app execute upon the
+      theme/category chosen?</p>
     <p>Judging will be based on the following criteria, with equal weight assigned to each:</p>
     <h5>User Interface / User Experience</h5>
-    Does the UI of the app look professional/fun, or is it sloppy? Is the app easy to use? Does the workflow of the app make sense, is it intuitive?  
+    <p>Does the UI of the app look professional/fun, or is it sloppy? Is the app easy to use? Does the workflow of the app
+    make sense, is it intuitive?</p>
     <h5>Overall Quality</h5>
-    <p>Does the app work completely from start to finish? How many and how severe were any bugs encountered? Was anything in the app that wasn’t fully implemented, like a useless button that was supposed to do something? Did the team scope their app’s features well given the time frame of the Hackathon?</p>
-    <h5>Quality of Pitch / App Impact    </h5>
-    <p>Does the app seem like something people would want to buy and use outside of the Hackathon? Was the team able to explain their idea and what the app actually did?</p>
+    <p>Does the app work completely from start to finish? How many and how severe were any bugs encountered? Was
+      anything in the app that wasn’t fully implemented, like a useless button that was supposed to do something? Did
+      the team scope their app’s features well given the time frame of the Hackathon?</p>
+    <h5>Quality of Pitch / App Impact </h5>
+    <p>Does the app seem like something people would want to buy and use outside of the Hackathon? Was the team able to
+      explain their idea and what the app actually did?</p>
     <h5>Usefulness / Practicality</h5>
     <p>How will it help modernize regulatory systems?</p>
   </div>
 
 
-  <div class="container problem-content text-center pb-xl-5 my-lg-5" data-aos="fade-up" id="judge" data-aos-duration="800">
+  <div class="container problem-content text-center pb-5 my-5" data-aos="fade-up" id="judge" data-aos-duration="800">
     <h1>JUDGES</h1>
     <h5 style="color: #ecd92c;">Judges will be from both Academia and Industry</h5>
-  
-  </div>  
 
-  <div class="container problem-content text-center pb-xl-5 my-lg-5" data-aos="fade-up" id="faq" data-aos-duration="800">
+  </div>
+
+  <div class="container problem-content text-center pb-5 my-5" data-aos="fade-up" id="faq" data-aos-duration="800">
     <h1>FAQ</h1>
     <p>Judging will be based on the following criteria, with equal weight assigned to each:</p>
     <h5>Who should participate?</h5>
-    <p>Anyone that has an interest in regulatory solutions in the energy and financial services sector. <br/>
+    <p>Anyone that has an interest in regulatory solutions in the energy and financial services sector. <br />
 
-      Any companies or start ups that want to represent the organization with a team or friends from different organizations that want to come together as a team.</p>
+      Any companies or start ups that want to represent the organization with a team or friends from different
+      organizations that want to come together as a team.</p>
     <p>Judging will be based on the following criteria, with equal weight assigned to each:</p>
     <h5>Can I bring a team?</h4>
-    Does the UI of the app look professional/fun, or is it sloppy? Is the app easy to use? Does the workflow of the app make sense, is it intuitive?  
-    <h5>Overall Quality</h4>
-    <p>Yes, though we have a limit of six members per team. You can bring your friends or you can team up with other hackers on site. However you choose to do it, be ready to hack!</p>
-    <h5>Do we own your code?</h5>
-    <p>No, all code is yours. We are here to enable innovation not kill it.  </p>
-    <h5>What is the goal of the hackathon?    </h5>
-    <p>To bring together the regulators, incumbents, start ups and anyone with an idea to help solve regulator issues. We want to create an environment that embraces new ideas and regtech solutions for the industries. A place for designers and developers to geek out with worrying about failure or affecting a company’s bottom line. We know it takes longer than a weekend, but this is a great start.</p>
-      <h5>What do I bring?
-      </h5>
-      <p>Your laptop and any software you need.</p>
-      <h5>Will there be food?
-      </h5>
-      <p>We will serve all main meals and coffee/tea. Bring anything you want to snack on during the event.      </p>
-      <h5>Should I bring clothes?
-      </h5>
-      <p>Expect to stay overnight, so bring what you need to get through the hackathon. We’ll provide some sleep spaces for those who need some shut-eye. Remember you’re in a public forum, so please act accordingly.
-      </p>
-      <h5>How late can I stay?
-      </h5>
-      <p>We want you to come back refreshed and raring to go on Sunday so we are closing the doors at 10pm on Friday and Saturday and re-opening at 8am on Saturday and Sunday</p>
+     <p>Does the UI of the app look professional/fun, or is it sloppy? Is the app easy to use? Does the workflow of the
+      app make sense, is it intuitive ?</p> 
+      <h5>Overall Quality</h4>
+        <p>Yes, though we have a limit of six members per team. You can bring your friends or you can team up with other
+          hackers on site. However you choose to do it, be ready to hack!</p>
+        <h5>Do we own your code?</h5>
+        <p>No, all code is yours. We are here to enable innovation not kill it. </p>
+        <h5>What is the goal of the hackathon? </h5>
+        <p>To bring together the regulators, incumbents, start ups and anyone with an idea to help solve regulator
+          issues. We want to create an environment that embraces new ideas and regtech solutions for the industries. A
+          place for designers and developers to geek out with worrying about failure or affecting a company’s bottom
+          line. We know it takes longer than a weekend, but this is a great start.</p>
+        <h5>What do I bring?
+        </h5>
+        <p>Your laptop and any software you need.</p>
+        <h5>Will there be food?
+        </h5>
+        <p>We will serve all main meals and coffee/tea. Bring anything you want to snack on during the event. </p>
+        <h5>Should I bring clothes?
+        </h5>
+        <p>Expect to stay overnight, so bring what you need to get through the hackathon. We’ll provide some sleep
+          spaces for those who need some shut-eye. Remember you’re in a public forum, so please act accordingly.
+        </p>
+        <h5>How late can I stay?
+        </h5>
+        <p>We want you to come back refreshed and raring to go on Sunday so we are closing the doors at 10pm on Friday
+          and Saturday and re-opening at 8am on Saturday and Sunday</p>
   </div>
 
 
-  <div class="container text-center schedule my-lg-5 pb-xl-4 " data-aos="fade-up" id="schedule" data-aos-duration="800">
+  <div class="container text-center schedule my-5 pb-4 " data-aos="fade-up" id="schedule" data-aos-duration="800">
     <h1>SCHEDULE</h1>
-    <h5 style="color: #ecd92c;" >TBA</h5>
+    <h5 style="color: #ecd92c;">TBA</h5>
   </div>
 
 
-  <div class="container text-center my-lg-4 py-xl-4 register" data-aos="fade-left" id="register" data-aos-duration="800">
+  <div class="container text-center my-4 py-4 register" data-aos="fade-left" id="register" data-aos-duration="800">
     <h1 class="py-3">REGISTER</h1>
     <button class="btn btn-secondary mb-5"> REGISTER </button>
-    <h4 class="mb-4" id="venue" style="color: #ecd92c;">Venue Information 
+    <h4 class="mb-4" id="venue" style="color: #ecd92c;">Venue Information
     </h4>
-    <iframe data-aos="zoom-in" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.443108568659!2d73.02328425069814!3d19.04424585785496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3db0123a8b9%3A0x499e9208cc80859b!2sRamrao%20Adik%20Institute%20of%20Technology%20Nerul!5e0!3m2!1sen!2sin!4v1580888403667!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <div class="embed-responsive embed-responsive-4by3">
+      <iframe class="embed-responsive-item p-xl-5" data-aos="zoom-in"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.443108568659!2d73.02328425069814!3d19.04424585785496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3db0123a8b9%3A0x499e9208cc80859b!2sRamrao%20Adik%20Institute%20of%20Technology%20Nerul!5e0!3m2!1sen!2sin!4v1580888403667!5m2!1sen!2sin"
+        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
     <h5 class="my-4">RAIT, DY Patil Vidynagar, Sector 7, Navi Mumbai - 400706</h5>
   </div>
 
 
   <!-- JavaScript -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -224,6 +245,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+  <!-- <script>$('.navbar-toggler').on('click',function () {
+      $('html').toggleClass("active");
+      console.log('toggled');
+  });</script> -->
 </body>
 
 </html>
