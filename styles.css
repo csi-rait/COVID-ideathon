@@ -3,8 +3,13 @@ body {
   color: #fff;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   font-family: "IBM Plex Mono", monospace;
+}
+html{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 /* ----------NAVBAR----------- */
@@ -79,7 +84,8 @@ body {
   position: absolute;
   top: 0;
   z-index: 0;
-  height: 100vh;
+  /* height: auto; */
+  /* max-width: 100% !important; */
 }
 
 .header {
@@ -195,15 +201,12 @@ body {
   background: #ecd92c;
   border-radius: 10px;
 }
-.active{
-  background-color: #000 !important;
-}
 
 /* -----------------MEDIA QUERY---------- */
 @media only screen and (max-width: 768px) {
-  body, html{
+  /* body, html{
     overflow-x: hidden !important;
-  }
+  } */
   ::-webkit-scrollbar {
     display: none;
   }
