@@ -71,7 +71,7 @@
     window.iFramesToRotate = 1000.0;
     window.iPerspective = 250;
     window.iNewParticlePerFrame = 8;
-    window.fGrowDuration = 100.0;
+    window.fGrowDuration = 10.0;
     window.fWaitDuration = 50.0;
     window.fShrinkDuration = 250.0;
     window.aColor = [255, 128, 128];

@@ -38,6 +38,13 @@ html{
   text-align: center;
 }
 
+.headline p{
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.5em;
+  margin-bottom: 0 !important;
+}
+
 .headline h1 {
   overflow: hidden;
   border-right: 0.15em solid orange;
@@ -109,7 +116,9 @@ html{
 .register h4, .register h5 {
   font-weight:300;
 }
-
+.header h5{
+  color: #00baf1;
+}
 
 #rules, #judge {
   background-image: url("./assets/img/cool-img.png");
