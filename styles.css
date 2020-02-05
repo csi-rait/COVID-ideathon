@@ -7,6 +7,9 @@ body {
   font-family: "IBM Plex Mono", monospace;
 }
 
+html{
+  scroll-behavior: smooth !important;
+}
 /* ----------NAVBAR----------- */
 .nav-link {
   padding: 0 1rem !important;
@@ -27,6 +30,7 @@ body {
 }
 
 .header {
+  margin-top:-20vh;
   height: 100vh !important;
 }
 .headline {
@@ -73,6 +77,9 @@ body {
 
 /* -----------PROBLEM STATEMENT-------- */
 
+.problem-content {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
 .problem-content h5 {
   color: #00baf1;
   margin: 2rem 0;
@@ -86,7 +93,45 @@ body {
 }
 
 /* ------------PRIZES--------- */
-
-.prizes .col-4 {
+.prizes, .schedule{
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+.prizes .col-3 {
   border: 3px solid white;
+}
+
+.prizes p{
+  font-size: 0.9rem;
+  font-weight: 300;
+  padding: 0.25rem 0;
+}
+
+.register h4, .register h5 {
+  font-weight:300;
+}
+
+
+
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ecd92c;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
