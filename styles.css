@@ -111,7 +111,9 @@ html{
 }
 
 
-
+#rules, #judge {
+  background-image: url("./assets/img/cool-img.png");
+}
 
 ::-webkit-scrollbar {
   width: 12px;
