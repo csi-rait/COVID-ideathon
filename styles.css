@@ -7,9 +7,6 @@ body {
   font-family: "IBM Plex Mono", monospace;
 }
 
-html{
-  scroll-behavior: smooth !important;
-}
 /* ----------NAVBAR----------- */
 .nav-link {
   padding: 0 1rem !important;
@@ -19,11 +16,19 @@ html{
   color: #00baf1 !important;
 }
 
-.show {
+.show , .collapsing{
   height: 80vh !important;
-  transition: all 0.1s linear;
   background-color: black;
-
+  transition: all 0.2s ease-in-out;
+}
+/* .navbar-collapse{
+  transition: height 0.2s ease-out;
+} */
+.navbar-toggler:focus, button:focus{
+  outline: none !important;
+}
+.navbar-toggler{
+  border: none;
 }
 /* -----------------Button animation css-------------- */
 .icon-bar {
