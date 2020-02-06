@@ -145,11 +145,18 @@ html{
 
 .problem-content {
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  background-image: url('./assets/img/cool-img.png');
 }
 .problem-content h5 {
   color: #00baf1;
   margin: 2rem 0;
   text-align: center;
+}
+
+.problem-content h6{
+  text-align: center;
+  padding: 0.5rem 0;
+  color: #ecd92c;
 }
 
 .problem-content p {
