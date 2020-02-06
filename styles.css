@@ -50,6 +50,10 @@ html{
   background: transparent !important;
 }
 
+#notes, #judge {
+  background-image: none;
+}
+
 
 .navbar-toggler .top-bar {
   transform: rotate(45deg);
@@ -156,7 +160,6 @@ html{
 .problem-content h6{
   text-align: center;
   padding: 0.5rem 0;
-  color: #ecd92c;
 }
 
 .problem-content p {
@@ -186,7 +189,7 @@ html{
   color: #00baf1;
 }
 
-#rules, #judge, #schedule {
+#rules, #schedule {
   background-image: url("./assets/img/cool-img.png");
 }
 
@@ -375,6 +378,14 @@ html{
 
 .direction-r .desc {
   margin: 1em 0 0 0.75em;
+}
+
+.register a {
+  color: #00baf1 !important;
+}
+
+.btn-primary {
+  background-color: #00b9f100 !important;
 }
 
 /* ================ Timeline Media Queries ================ */
