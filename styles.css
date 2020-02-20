@@ -277,10 +277,10 @@ html{
 .flag {
   position: relative;
   display: inline;
-  background: rgb(248,248,248);
+  background: #1A1C1D;
   padding: 6px 10px;
   border-radius: 5px;
-  color: black !important;
+  color: white;
   font-weight: 600;
   text-align: left;
 }
@@ -300,8 +300,8 @@ html{
 .direction-l .flag:before,
 .direction-r .flag:before {
   position: absolute;
-  top: 50%;
-  right: -40px;
+  top: 65%;
+  right: -36px;
   content: ' ';
   display: block;
   width: 12px;
@@ -314,7 +314,7 @@ html{
 }
 
 .direction-r .flag:before {
-  left: -40px;
+  left: -36px;
 }
 
 .direction-l .flag:after {
@@ -365,7 +365,7 @@ html{
 .time {
   display: inline-block;
   padding: 4px 6px;
-  background: rgb(248,248,248);
+  background: #1A1C1D;
 }
 
 .desc {
@@ -414,7 +414,6 @@ html{
 }
 
 .flag {
-    background: rgb(255,255,255);
     z-index: 15;
 }
 
@@ -422,7 +421,7 @@ html{
 .direction-r .flag:before {
   position: absolute;
   top: -30px;
-    left: 50%;
+    left: 52%;
     content: ' ';
     display: block;
     width: 12px;
