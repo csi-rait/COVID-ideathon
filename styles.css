@@ -114,7 +114,7 @@ html{
   white-space: nowrap;
   margin: 0.75rem auto;
   letter-spacing: 0.15em;
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: typing 4s steps(30), blink-caret 1s infinite;
 }
 
 .headline h4 {
@@ -143,6 +143,19 @@ html{
 .headline span {
   font-weight: bold;
   color: #00baf1;
+}
+
+/* -----------ANIM.js-------- */
+.anim, .anim svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 66%;
+}
+
+.anim path {
+  stroke-width: 2;
 }
 
 /* -----------PROBLEM STATEMENT-------- */
@@ -561,7 +574,4 @@ html{
   .prizes .col-lg-3 {
     border: none;
   }
- 
-
-
 }
