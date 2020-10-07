@@ -1,5 +1,11 @@
 body {
-  background-color: #00001a;
+  /* background-color: #000d61; */
+  /* background-color: #020c4d; */
+  /* background-color: #010940; */
+  /* background-color: #00062b; */
+  /* background-color: #B3DCFF; */
+  background: rgb(2,0,36);
+  background: linear-gradient(144deg, rgba(2,0,36,1) 0%, rgba(9,107,121,1) 53%, rgba(0,159,255,1) 100%); 
   color: #fff;
   margin: 0;
   padding: 0;
@@ -172,8 +178,9 @@ html{
   
 }
 .problem-content h5 {
-  color: #00baf1;
+  color: #351866;
   margin: 2rem 0;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -402,11 +409,12 @@ html{
 }
 
 .register a {
-  color: #00baf1 !important;
+  color: #351866 !important;
 }
 
 .btn-primary {
   background-color: #00b9f100 !important;
+  border-color: #351866 !important;
 }
 
 /* ================ Timeline Media Queries ================ */
