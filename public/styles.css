@@ -1,5 +1,5 @@
 body {
-  background-color: #000;
+  background-color: #00001a;
   color: #fff;
   margin: 0;
   padding: 0;
@@ -157,7 +157,7 @@ html{
   height: 100%;
   position: absolute;
   top: 0;
-  opacity: 66%;
+  opacity: 71%;
 }
 
 .anim path {
@@ -168,7 +168,8 @@ html{
 
 .problem-content {
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-  background-image: url('./assets/img/cool-img.png');
+  
+  
 }
 .problem-content h5 {
   color: #00baf1;
@@ -207,10 +208,11 @@ html{
 .header h5{
   color: #00baf1;
 }
+/* .p-2 {
+  padding: 2rem !important;
+} */
 
-#rules, #schedule {
-  background-image: url("./assets/img/cool-img.png");
-}
+
 
 ::-webkit-scrollbar {
   width: 12px;
@@ -579,8 +581,17 @@ html{
   }
   .prizes .col-lg-3 {
     border: none;
+    
   }
-  
+  #csilogo{
+    width: 189px;
+    height: 189px;
+  }
+  /* #raitlogo{
+    height: 150px!important;
+    width: 225px!important;
+    padding: 4rem !important;
+  } */
 }
 #raitlogo{
   height: 200px;
