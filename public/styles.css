@@ -571,10 +571,15 @@ html{
   .problem-content h5 {
     font-size: 1rem;
   }
-  
-  .problem-content p {
-   font-size: 0.75rem;
+  h3{
+    font-size: 1.3rem;
   }
+  h4{
+    font-size: 1rem;
+  }
+  /* .problem-content p {
+   font-size: 0.75rem;
+  } */
   .problem-content h1, .prizes h1, #schedule h1, #register h1{
     font-size: 1.325rem;
   }
