@@ -580,7 +580,7 @@ html{
   /* .problem-content p {
    font-size: 0.75rem;
   } */
-  .problem-content h1, .prizes h1, #schedule h1, #register h1{
+  .problem-content h1, .prizes h1, #schedule h1, #register h1,#slidelink h1{
     font-size: 1.325rem;
   }
   .prizes p{
