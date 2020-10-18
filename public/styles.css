@@ -298,14 +298,14 @@ html{
 
 .flag-wrapper {
   position: relative;
-  display: inline-block;
+  display:inline-block;
   
   text-align: center;
 }
 
 .flag {
   position: relative;
-  display: inline;
+  display: flex;
   background: #1A1C1D;
   padding: 6px 10px;
   border-radius: 5px;
