@@ -419,29 +419,9 @@ html{
   border-color: #351866 !important;
 }
 
-#datasetlink .btn-primary{
-  
-  border-color: #00BAF1 !important;
-  color: #00baf1 !important;
-  font-size: 1.5rem;
-}
-
-#datasetlink h1{
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-
-
 /* ================ Timeline Media Queries ================ */
 
 @media screen and (max-width: 660px) {
-
-  #datasetlink h1{
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  
 
 .timeline {
     width: 100%;
