@@ -304,8 +304,9 @@ html{
 }
 
 .flag {
+
   position: relative;
-  display: flex;
+  display: block;
   background: #1A1C1D;
   padding: 6px 10px;
   border-radius: 5px;
@@ -445,6 +446,7 @@ html{
 
 .flag {
     z-index: 15;
+    text-align: center;
 }
 
 .direction-l .flag:before,
